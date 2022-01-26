@@ -51,6 +51,7 @@ th, td {
     border:1px solid #000;
 }
 td {
+    height:48pt;
     padding:0 0 6pt 0;
 }
 th span, td span {
@@ -62,25 +63,36 @@ th span, td span {
     color:#FFF;
 }
 
-div#articles pre {
-    font-family:serif;
+article {
     font-size:12pt;
+    margin-bottom:36pt;
+}
+
+article h2 {
+    font-size:12pt;
+}
+
+article pre {
     white-space:pre-wrap;
     margin:0 0 0 29pt;
 }
 
-div#articles h2 {
+#clippit {
     font-size:12pt;
-    font-weight:bold;
+    width:100px;
+    position:fixed;
+    top:200px;
+    right:300px;
 }
 
-div#articles pre span {
-    text-decoration:underline;
+#clippit img {
+    width:150px;
 }
 
-article pre {
-    font-size:11pt !important;
-}
+                    #flakes
+                        {
+                        position:fixed;
+                    }
 
     </style>
 
@@ -88,21 +100,25 @@ article pre {
 
 <body>
     <div id="main">
+        <div id="snow">
+            <pre id="flakes">❄</pre>
+        </div>
         <header>
             <pre>
 
-         ████████     █████     ████████   ████████ 
-        ███░░░░███  ███░░░███ ███░░░░███ ███░░░░███
-       ░░░    ░███ ███   ░░███░░░    ░███░░░    ░███
-          ███████ ░███    ░███   ███████    ███████ 
-         ███░░░░  ░███    ░███  ███░░░░    ███░░░░  
-        ███      █░░███   ███  ███      █ ███      █
-      ░██████████ ░░░█████░  ░██████████░██████████
-       ░░░░░░░░░░    ░░░░░░   ░░░░░░░░░░ ░░░░░░░░░░ 
+                  ████████     █████     ████████   ████████ 
+                 ███░░░░███  ███░░░███ ███░░░░███ ███░░░░███
+                ░░░    ░███ ███   ░░███░░░    ░███░░░    ░███
+                   ███████ ░███    ░███   ███████    ███████ 
+                  ███░░░░  ░███    ░███  ███░░░░    ███░░░░  
+                 ███      █░░███   ███  ███      █ ███      █
+               ░██████████ ░░░█████░  ░██████████░██████████
+                ░░░░░░░░░░    ░░░░░░   ░░░░░░░░░░ ░░░░░░░░░░ 
 
-                     AFTER CALENDAR
+                              AFTER CALENDAR
 
-              software, services and tools                                         
+                       software, services and tools                                         
+
     </header>
     <table>
         <thead>
@@ -117,6 +133,7 @@ article pre {
             </tr>
         </thead>
         <tbody>
+        <!--
             <tr>
                 <td></td>
                 <td></td>
@@ -124,8 +141,19 @@ article pre {
                 <td></td>
                 <td></td>
                 <td><span>1</span>🙊</td>
-                <td><span>2</span>🙉 </td>
+                <td><span>2</span>🙉</td>
             </tr>
+                -->
+
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><span>1</span>🙊</td>
+                <td><span>2</span>🙉</td>
+                </tr>
             <tr>
                 <td><span>3</span><a href="http://2022.copyright.rip/#graphcommons">Graph Commons</a></td>
                 <td><span>4</span><a href="http://2022.copyright.rip/#f-droid">F-droid</a></td>
@@ -136,16 +164,16 @@ article pre {
                 <td><span>9</span>🙊</td>
             </tr>
             <tr>
-                <td><span>10</span>Arch Linux </td>
-                <td><span>11</span>Etherpad</td>
-                <td><span>12</span>Duck Duck Go</td>
-                <td><span>13</span>Git/GitHub</td>
-                <td><span>14</span>Aurora</td>
-                <td><span>15</span>Wikipedia</td>
-                <td><span>16</span></td>
+                <td><span>10</span><a href="#arch-linux">Arch Linux</a></td>
+                <td><span>11</span><a href="#markdown">Markdown</a></td>
+                <td><span>12</span><a href="#etherpad">Etherpad</a></td>
+                <td><span>13</span><a href="#aurora">Aurora</a></td>
+                <td><span>14</span><a href="#duck-duck-go">Duck Duck Go</a></td>
+                <td><span>15</span>🙊</td>
+                <td><span>16</span>🙉</td>
             </tr>
             <tr>
-                <td><span>17</span>▓▓▓▓▓▓</td>
+                <td><span>17</span><a href="#goodtime">Goodtime</a></td>
                 <td><span>18</span>▓▓▓▓▓▓</td>
                 <td><span>19</span>▓▓▓▓▓▓</td>
                 <td><span>20</span>▓▓▓▓▓▓</td>
@@ -163,160 +191,51 @@ article pre {
                 <td><span>30</span>▓▓▓▓▓▓</td>
             </tr>
             <tr>
-                <td><span>31</span></td>
+                <td><span>31</span>▓▓▓▓▓▓</td>
             </tr>
         </tbody>
     </table>
-<div id="articles">
+
+<div>
     <article id="graphcommons">
         <h2>03. <a href="http://graphcommons.com" target="_blank">Graph Commons</a> 🧠</h2>
         <pre>
+
+<a href="http://graphcommons.com" target="_blank">Graph Commons</a> is a powerful online structured graphing tool 📈 (while you can find its source code on <a href="https://github.com/graphcommons/" target="_blank">github</a>, they developed a <a href="https://graphcommons.com/plans" target="_blank">pricing model</a>: the free option already gives plenty of room to play around).
+
+I use it mainly for to investigate and understand complex relationship structures between " t h i n g s " (people, institutions, documents, whatever). I guess you could also use it for structure mind-mapping, and try to de·organize everything that's on your mind.
+
+There is also kind of a 🫂 "<a href="https://graphcommons.com/community" target="_blank">community</a>" feature allowing you to find obscure graphs, sometimes overwhelming enough to stress out even a modern computer.
+
+The relationship between <a href="https://graphcommons.com/graphs/0a79deca-46a2-48e9-9d90-326b20aa6e9e" target="_blank">Jeffr*y Epst*in and various public figures</a> (even the United F*cking States themselves, as a state 🤐) ,the role of <a href="https://graphcommons.com/stories/383b1dec-9943-4768-b58c-a834f0a76113/slides/3" target="_blank">Goldman Sachs in the Tr*mp Network</a>, 👮 <a href="https://graphcommons.com/graphs/f042fe57-cf19-458b-b390-8cf6fc2a2cca">Tear Gas Manufacturers interest cloud</a> or even an ambiguous <a href="https://graphcommons.com/graphs/bfc6c592-5212-43b1-8a5a-7f338064bfbf?auto=true&show=comments" target="_blank">investigation of the Paris Batclan attack</a> are some fascinating pieces you can find on the Graph Commons feed !
+
+As I'm writing my <a href="https://graphcommons.com/graphs/0e779a22-46d3-448d-8dac-de089ae3a6df" target="_blank"></a>master thesis at <a href="http://erg.be" target="_blank">erg</a>, 🌱 the rhizomatic visualisation of all the themes and things I want to include is crucial. But be careful, it's just way too easy to find <a href="https://knowyourmeme.com/memes/pepe-silvia" target="_blank">links and meaning everywhere</a> 🤯
         </pre>
     </article>
 
     <article id="f-droid">
         <h2>04. <a href="http://f-droid.org" target="_blank">F-droid</a> 📱</h2>
         <pre>
+
+<a href="https://www.f-droid.org/" target="_blank">F-Droid</a> is an alternative software repository for Android phones. It's supposed to host only Free Libre and Open Source Software (<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS</a>). It was built in 2010 by <a href="https://ciarang.com/" target="_blank">Ciaran Gultnieks</a>, who is responsible for an old-school CD-rom space flight game with a sexy name: <a href="https://ciarang.com/hardwar/" target="_blank">"Hardwar: The Future is Greedy"</a> (<a href="https://archive.org/details/HardwarUSA/Box1.jpg" target="_blank">see last cover</a>)  👾
+
+I wanted to introduce this alternative to 👿 G*ogle Pl*y St*re as some tools I'll be showcasing soon can be installed from <a href="https://www.f-droid.org/" target="_blank">F-Droid</a>. You can also find "major" applications, but it'll display a notice about privacy concerns, trackers, or non-free code libraries if they include some (you can download a 🛩️ <a href="https://www.f-droid.org/fr/packages/org.telegram.messenger/">Telegram client</a> for example even if it's not reaaalllllllllyyyyy free software).
+
+But... don't expect to find League Of Legends' Wild Rift nor Raid Shadow Legends ⚔️. There are plenty of nice utilities, but when it comes to games, well... you can find your usual 🐧 <a href="https://fr.wikipedia.org/wiki/Tux_Racer" target="_blank">Tux</a> apps and some intimate software but that's all. <b>Just to give a bit of perspective F-Droid lists over 3,800 applications while Google Play Store haz around 3 MILLIONS APPS 😱</b>
+
+It's quite easy to install, just go to <a href="https://www.f-droid.org/" target="_blank">https://f-droid.org/</a> and download the <a href="https://en.wikipedia.org/wiki/Android_application_package" target="_blank">.apk</a> file 📁(Android Application Package, think of a mobile phone .exe or .dmg) . Then, click on the "Download Complete" notification and you're all set ! On some phones you want to allow installing .apk from unknown sources, as G*ogle obviously doesn't want you to leave their Pl*y St*re <a href="https://en.wikipedia.org/wiki/Panopticon" target="_blank">panopticon</a> 🤬
+
+Oh, did I mention it was ONLY for Android ? 🍎 Sorry Apple stans... but if you put more than a thousand dollars in a mobile phone you obviously CAN pay for Youtube Premium, Spotify and you're already tracked from many sources 🤷 ! 
         </pre>
     </article>
 
     <article id="figlet">
         <h2>05. <a href="http://figlet.org" target="_blank">FIGlet</a> 🔡</h2>
         <pre>
-        </pre>
-    </article>
 
-    <article id="youtube-dl">
-        <h2>06. <a href="http://www.youtube-dl.org/" target="_blank">youtube-dl</a> 📽️</h2>
-        <pre>
+<a href="http://www.figlet.org/" target="_blank">FIGlet</a> is a program for making large letters out of ordinary text. 🔡 💻 Originally named newban, this tool was first developped in 1991 by Glenn Chappell, inspired by the electronic signature of his friend Frank Sheeran, he was later joined by Ian Chai. Hence the acronym FIG for 👪 Frank, Ian and Glenn letters ! 
 
-<a href="http://www.youtube-dl.org/" target="_blank">youtube-dl</a> is one of the most starred (with more than 101K⭐ as we speak) tool on <a href="https://github.com/ytdl-org/youtube-dl" target="_blank">Github</a> an open source code repository... This command line utility allows you to download locally video and audio files from streaming services 🤓
-
-Don't get confused by its name though, it can download from a range of websites, even our national <a href="https://www.dailymotion.com/video/x7koij" target="_blank">Dailymotion</a> 🐓 (remember ?). You can use <a href="http://www.youtube-dl.org/" target="_blank">youtube-dl</a> to download videos behind age restrictions, you can set up options to log-in to a service before downloading, or inject a custom password for protected <a href="https://vimeo.com/621650640" target="_blank">Vimeo</a> content 🤐
-
-(You don't know this classic animated movie 🥕 <a href="https://www.youtube.com/watch?v=aqz-KE-bpKQ&t=1s" target="_blank">"Big Buck Bunny"</a> ? Well this is a story for another time... )
-
-We take Yout*be or other services for granted but what if your favourite video was taken down because of a DMCA notice ? What if one day we succeed to break the GAFAM monopolies ? Collecting, curating and archiving online content seems crucial to me (more crucial than digital scarcity, web3 and tasteless NFTs for instance 🚀 💎 🦍)
-
-Keeping local files is both a useful and revolutionary, imhu ✊ Digital scarcity is a plague, people actually died because of it (R.I.P <a href="https://en.wikipedia.org/wiki/Aaron_Swartz" target="_blank">Aaron</a> 🪦) . Just have a look at the work the 🏛️ <a href="https://archive.org/details/satoArtOfComputerDesigning/mode/2up" target="_blank">Internet Archives</a> (les zhommes 💪) does and how many assholes are trying to stop them 😡
-
-This tool is a defence weapon 🛡️, feared by almighty 🙌 ©️OPYRIGHT HOLDERS 👑 The project received a DMCA from the Recording Industry Association of America. If you're into legal disputes, have a read a this <a href="https://github.com/github/dmca/blob/master/2020/11/2020-11-16-RIAA-reversal-effletter.pdf">response from the Electronic Frontier Foundation.</a> (the noisy image 🖼️ is actually the source code itself, it was shared online making all RIAA efforts useless)
-
-This piece of codes powers every crappy ⬇️  "Y*utubeToMp3 Dowloader" out there, and many many more software: maybe something to do with it being released into the PUBLIC DOMAIN ? 🤔🤔🤔 I don't know, just throwing my 2 cents here of whatever...
-        </pre>
-    </article>
-
-<h2>07. <a href="https://archlinux.org/" target="_blank">VLC</a></h2>
-<h2>10. <a href="https://archlinux.org/" target="_blank">Arch Linux</a></h2>
-<!--<h2>22/01/10 → <a href="https://archlinux.org/" target="_blank">Arch Linux</a></h2>-->
-<pre id="arch">
-
-"I use arch btw" 🙊
-
-💻 My daily driver for at least 4 years ! I had to give this distro some love → Arch Linux is an open source Linux distribution, you can think of it as an alternative to Mac OS or Windows 10 🤮
-
-It was started in 2001 by Judd Vinet as "a small little project". If you're also into tools and computers, you might find his interview on usesthis.com (a great resource) quite insightful 💡
-
-There isn't much to say about arch though 🤷 it is so bare-bones that it can only survive inside an organically complex open source software environment: i3, tmux, x, systemd and such... 🌱  🕸️
-
-This Linux distribution is intended to people eager to learn more about their tools, to understand whats going on under the hood 🏁 As it is quite light (it doesn't even come with a browser !), you can use it to run on older machines such as the sexy IBM/Lenovo ThinkPads ❤️‍🔥
-
-You can find so much information about arch, Linux and UNIX computing in general on their wiki, it's a gold mine ⛏️
-</pre>
-</div>
-    </div>
-</body>
-
-
-<!--
-
-    ████████     █████     ████████   ████████ 
-    ███░░░░███  ███░░░███  ███░░░░███ ███░░░░███
-    ░░░    ░███ ███   ░░███░░░    ░███░░░    ░███
-    ███████ ░███    ░███   ███████    ███████ 
-    ███░░░░  ░███    ░███  ███░░░░    ███░░░░  
-    ███      █░░███   ███  ███      █ ███      █
-    ░██████████ ░░░█████░  ░██████████░██████████
-    ░░░░░░░░░░    ░░░░░░   ░░░░░░░░░░ ░░░░░░░░░░ 
-
-
-    <b>AFTER CALENDAR</b>
-
-    <i>software, services and tools</i>                                         
-
-    </pre>	
-    <div id="clippit">
-        <pre>
-      𝘥𝘰 𝘸𝘦 𝘶𝘴𝘦 𝘵𝘰𝘰𝘭𝘴,
-    𝘰𝘳 𝘢𝘳𝘦 𝘵𝘩𝘦𝘺 𝘶𝘴𝘪𝘯𝘨 𝘶𝘴 ?
-        </pre>															
-        <img src="clip.webp" alt="clippit, the microsoft assistant">
-        <pre id="me">
-
-a simple gift by <a href="https://twitter.com/MartinCopyright">martin.copyright</a>
-
-(find images <a href="https://www.instagram.com/detertiarisation/">here</a>)
-        </pre>
-    </div>
-    <div>
-        <pre id="graphcommons">• 22/01/03 - <b><a href="http://graphcommons.com" target="_blank">Graph Commons</a> 🧠</b>
-<a href="http://graphcommons.com" target="_blank">Graph Commons</a> is a powerful online structured graphing tool 📈
-(while you can find its source code on <a href="https://github.com/graphcommons/" target="_blank">github</a>, they developed 
-a <a href="https://graphcommons.com/plans" target="_blank">pricing model</a>: the free option already gives plenty of room to play around)
-
-I use it mainly for to investigate and understand complex relationship structures between 
-" t h i n g s " (people, institutions, documents, whatever). 
-I guess you could also use it for structure mind-mapping, 
-and try to de·organize everything that's on your mind.
-
-There is also kind of a 🫂 "<a href="https://graphcommons.com/community" target="_blank">community</a>" feature allowing you to find obscure graphs, 
-sometimes overwhelming enough to stress out even a modern computer.
-
-The relationship between <a href="https://graphcommons.com/graphs/0a79deca-46a2-48e9-9d90-326b20aa6e9e" target="_blank">Jeffr*y Epst*in and various public figures</a> (even the United F*cking States themselves, as a state 🤐) , 
-the role of <a href="https://graphcommons.com/stories/383b1dec-9943-4768-b58c-a834f0a76113/slides/3" target="_blank">Goldman Sachs in the Tr*mp Network</a>, 👮 <a href="https://graphcommons.com/graphs/f042fe57-cf19-458b-b390-8cf6fc2a2cca">Tear Gas Manufacturers interest cloud</a> 
-or even an ambiguous <a href="https://graphcommons.com/graphs/bfc6c592-5212-43b1-8a5a-7f338064bfbf?auto=true&show=comments" target="_blank">investigation of the Paris Batclan attack</a> are some fascinating pieces you can find on the Graph Commons feed !
-
-As I'm writing my <a href="https://graphcommons.com/graphs/0e779a22-46d3-448d-8dac-de089ae3a6df" target="_blank"></a>master thesis at <a href="http://erg.be" target="_blank">erg</a>, 🌱 the rhizomatic visualisation of all the themes and things I want to include is crucial.
-But be careful, it's just way too easy to find <a href="https://knowyourmeme.com/memes/pepe-silvia" target="_blank">links and meaning everywhere</a> 🤯
-
-
-
--
-        </pre>
-        <pre id="f-droid">• 22/01/04 - <b><a href="https://www.f-droid.org/" target="_blank">F-Droid</a> 📱</b>
-<a href="https://www.f-droid.org/" target="_blank">F-Droid</a> is an alternative software repository for Android phones. It's supposed to host only Free Libre 
-and Open Source Software (<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS</a>). It was built in 2010 by <a href="https://ciarang.com/" target="_blank">Ciaran Gultnieks</a>, who is responsible for an old-school 
-CD-rom space flight game with a sexy name: <a href="https://ciarang.com/hardwar/" target="_blank">"Hardwar: The Future is Greedy"</a> (<a href="https://archive.org/details/HardwarUSA/Box1.jpg" target="_blank">see last cover</a>)  👾
-
-I wanted to introduce this alternative to 👿 G*ogle Pl*y St*re as some tools I'll be showcasing soon 
-can be installed from <a href="https://www.f-droid.org/" target="_blank">F-Droid</a>. You can also find "major" applications, but it'll display a notice about privacy concerns, 
-trackers, or non-free code libraries if they include some (you can download a 🛩️ <a href="https://www.f-droid.org/fr/packages/org.telegram.messenger/">Telegram client</a> for example even if it's 
-not reaaalllllllllyyyyy free software).
-
-But... don't expect to find League Of Legends' Wild Rift nor Raid Shadow Legends ⚔️. There are plenty of nice utilities, 
-but when it comes to games, well... you can find your usual 🐧 <a href="https://fr.wikipedia.org/wiki/Tux_Racer" target="_blank">Tux</a> apps and some intimate software but that's all.
-<b>Just to give a bit of perspective F-Droid lists over 3,800 applications while Google Play Store haz around 3 MILLIONS APPS 😱</b>
-
-It's quite easy to install, just go to <a href="https://www.f-droid.org/" target="_blank">https://f-droid.org/</a> and download the <a href="https://en.wikipedia.org/wiki/Android_application_package" target="_blank">.apk</a> file 📁(Android Application Package, 
-think of a mobile phone .exe or .dmg) . Then, click on the "Download Complete" notification and you're all set ! 
-On some phones you want to allow installing .apk from unknown sources, as G*ogle obviously doesn't want you to leave their 
-Pl*y St*re <a href="https://en.wikipedia.org/wiki/Panopticon" target="_blank">panopticon</a> 🤬
-
-Oh, did I mention it was ONLY for Android ? 
-🍎 Sorry Apple stans... but if you put more than a thousand dollars in a mobile phone you obviously CAN pay for Youtube Premium, Spotify 
-and you're already tracked from many sources 🤷 ! 
-
-
-
--
-        </pre>
-        <pre id="figlet">• 22/01/05 - <b><a href="http://www.figlet.org/" target="_blank">FIGlet</a> 🔡</b>
-<a href="http://www.figlet.org/" target="_blank">FIGlet</a> is a program for making large letters out of ordinary text. 🔡 💻
-Originally named newban, this tool was first developped in 1991 by Glenn Chappell, inspired by the electronic signature of his friend Frank Sheeran, he was later joined by Ian Chai. Hence the acronym FIG for 👪 Frank, Ian and Glenn letters ! 
-
-It has been used to create art in various community spaces on the web such as <a href="https://en.wikipedia.org/wiki/.nfo" target="_blank">.nfo</a> files, email signatures, software banners, websites and much much more 🎨
-
-I discovered this cute tool when I started using my Mac OS command line interface (Terminal.app) and never stopped using it since then.
+It has been used to create art in various community spaces on the web such as <a href="https://en.wikipedia.org/wiki/.nfo" target="_blank">.nfo</a> files, email signatures, software banners, websites and much much more 🎨 I discovered this cute tool when I started using my Mac OS command line interface (Terminal.app) and never stopped using it since then.
 
 And YES ! I actually did the title of my calendar with <a href="http://www.figlet.org/" target="_blank">FIGlet</a>, thanks for noticing 🤗
 
@@ -342,14 +261,254 @@ m888N= 888>  "88888%    ^*888%   ^*888%     'Y"
 
 (🤢 its supposed to spell "hello" 👋, you can appreciate it with good formating via the link in bio, ofc)
 
-Go to their website http://figlet.org if you want of copy of the program, but chances are if you run and UNIX operating system that <a href="http://www.figlet.org/" target="_blank">FIGlet</a> is already pre installed. 
-
-(if you want a rush of Internet nostalgia, I'd suggest you to visit http://www.plig.net the website hosting <a href="http://www.figlet.org/" target="_blank">FIGlet</a> code and man pages)
-
-You might also want to have a look into 🚽 <a href="http://caca.zoy.org/wiki/toilet" target="_blank">TOIlet</a>, an alternative to <a href="http://www.figlet.org/" target="_blank">FIGlet</a> with colouring options, gradients and frames, just with a shittier name. 💩
-
-
-
--
+Go to their website http://figlet.org if you want of copy of the program, but chances are if you run and UNIX operating system that <a href="http://www.figlet.org/" target="_blank">FIGlet</a> is already pre installed. (if you want a rush of Internet nostalgia, I'd suggest you to visit http://www.plig.net the website hosting <a href="http://www.figlet.org/" target="_blank">FIGlet</a> code and man pages) You might also want to have a look into 🚽 <a href="http://caca.zoy.org/wiki/toilet" target="_blank">TOIlet</a>, an alternative to <a href="http://www.figlet.org/" target="_blank">FIGlet</a> with colouring options, gradients and frames, just with a shittier name. 💩
         </pre>
--->
+    </article>
+
+    <article id="youtube-dl">
+        <h2>06. <a href="http://www.youtube-dl.org/" target="_blank">youtube-dl</a> 📽️</h2>
+        <pre>
+
+<a href="http://www.youtube-dl.org/" target="_blank">youtube-dl</a> is one of the most starred (with more than 101K⭐ as we speak) tool on <a href="https://github.com/ytdl-org/youtube-dl" target="_blank">Github</a> an open source code repository... This command line utility allows you to download locally video and audio files from streaming services 🤓
+
+Don't get confused by its name though, it can download from a range of websites, even our national <a href="https://www.dailymotion.com/video/x7koij" target="_blank">Dailymotion</a> 🐓 (remember ?). You can use <a href="http://www.youtube-dl.org/" target="_blank">youtube-dl</a> to download videos behind age restrictions, you can set up options to log-in to a service before downloading, or inject a custom password for protected <a href="https://vimeo.com/621650640" target="_blank">Vimeo</a> content 🤐
+
+(You don't know this classic animated movie 🥕 <a href="https://www.youtube.com/watch?v=aqz-KE-bpKQ&t=1s" target="_blank">"Big Buck Bunny"</a> ? Well this is a story for another time... )
+
+We take Yout*be or other services for granted but what if your favourite video was taken down because of a DMCA notice ? What if one day we succeed to break the GAFAM monopolies ? Collecting, curating and archiving online content seems crucial to me (more crucial than digital scarcity, web3 and tasteless NFTs for instance 🚀 💎 🦍)
+
+Keeping local files is both a useful and revolutionary, imhu ✊ Digital scarcity is a plague, people actually died because of it (R.I.P <a href="https://en.wikipedia.org/wiki/Aaron_Swartz" target="_blank">Aaron</a> 🪦) . Just have a look at the work the 🏛️ <a href="https://archive.org/details/satoArtOfComputerDesigning/mode/2up" target="_blank">Internet Archives</a> (les zhommes 💪) does and how many assholes are trying to stop them 😡
+
+This tool is a defence weapon 🛡️, feared by almighty 🙌 ©️OPYRIGHT HOLDERS 👑 The project received a DMCA from the Recording Industry Association of America. If you're into legal disputes, have a read a this <a href="https://github.com/github/dmca/blob/master/2020/11/2020-11-16-RIAA-reversal-effletter.pdf">response from the Electronic Frontier Foundation.</a> (the noisy image 🖼️ is actually the source code itself, it was shared online making all RIAA efforts useless)
+
+This piece of codes powers every crappy ⬇️  "Y*utubeToMp3 Dowloader" out there, and many many more software: maybe something to do with it being released into the PUBLIC DOMAIN ? 🤔🤔🤔 I don't know, just throwing my 2 cents here of whatever...
+        </pre>
+    </article>
+
+    <article id="vlc">
+        <h2>07. <a href="https://https://www.videolan.org/" target="_blank">VLC</a></h2>
+        <pre>
+
+VLC media player is an amazing 🐓 french built free and open source software.
+
+The player is part of the french "Socle interministériel de Logiciels Libres" which roughly transcribes to Interministerial Libre Software Baselist.
+🤩 As much as I love lists, I'm not fond of governments 💣 But I find it quite funny to imagine those boomers struggling with their CUPS printer lists configuration 🤣
+
+👁️ Did you know you can buy VLC on Ebay for 5$ ? I guess if someone subscribe to my Patreon I'll buy one and try it !
+
+I mentioned Big Buck Bunny earlier (see youtube-dl): turns out it's also used to display VLC Android client.
+
+You can find a lot of (digital) goodies on their website, as reminder of a time where customizing your desktop icons was a more common goal.
+
+The software can read from a 🤯MASSIVE amount of formats (more in comments)
+
+And btw, remember DVD regions ? Well as VLC can decode them all, the software might not be legal under the infamous Digital Millenial Copyright Act that's been enforcing the laughable "CAPITALISM DRIVES INNOVATION" mindset for more than 20 years 🖕
+
+🎖️ I forgot to mention that in 2018, Jean Baptiste Kempf was awarded with the french Ordre du Merite membership. Was it a way for Macron's govenrment to emphasize on their Startup Nation motto ? If so: yes, i'd like to see many projects thrive like VLC helped by this mindset but I think im being foolish 🎅
+        </pre>
+    </article>
+    <article id="arch">
+        <h2>10. <a href="https://archlinux.org/" target="_blank">Arch Linux</a></h2>
+        <pre id="arch">
+
+"I use arch btw" 🙊
+
+💻 My daily driver for at least 4 years ! I had to give this distro some love → Arch Linux is an open source Linux distribution, you can think of it as an alternative to Mac OS or Windows 10 🤮
+
+It was started in 2001 by Judd Vinet as "a small little project". If you're also into tools and computers, you might find his interview on usesthis.com (a great resource) quite insightful 💡
+
+There isn't much to say about arch though 🤷 it is so bare-bones that it can only survive inside an organically complex open source software environment: i3, tmux, x, systemd and such... 🌱  🕸️
+
+This Linux distribution is intended to people eager to learn more about their tools, to understand whats going on under the hood 🏁 As it is quite light (it doesn't even come with a browser !), you can use it to run on older machines such as the sexy IBM/Lenovo ThinkPads ❤️‍🔥
+
+You can find so much information about arch, Linux and UNIX computing in general on their wiki, it's a gold mine ⛏️
+        </pre>
+    </article>
+
+    <article id="markdown">
+        <h2>11. <a href="https://archlinux.org/" target="_blank">Markdown</a></h2>
+        <pre>
+
+🪦 *As today we honor the tragic death of Aaron Swarz, I could have share a lot of things: RSS, Wikipedia, Reddit, or even some of his texts...* But today we'll talk about Markdown. 📝
+
+## what is markdown ?
+Markdown is a minimal formatting markup language. Ever stumbled across a file ending with a `.md` extension ? 🤔 Yup, that's markdown. It uses readily keyboard available characters (`#`, `*`, `>`, `[, `]`) to enforce hierarchy in a text Being software agnostic, you can use it anywhere, even on paper ! 🗞️
+
+It is a shame we can no longer use this kind of tools here (see the FIGlet post for instance) 🖕 But there is online place where markdown is still common such as:
+* Github 🐙
+* Reddit 👽
+* Stackoverflow 💡
+* and of course our beloved Wikipedia ! 🌐
+* (many more of course)
+
+Apparently the co?creator of Markdown, Josh Gruber, states that Aaron was rather his muse at the time than the actual co-whatever. This doesn't change much though. 🥱
+
+On a side note, there are plenty of markdown flavor 🍦: wiki, github, multi markdown and more... There are/were standardization efforts, like CommonMark, among which team we can find Jeff Atwood, one of my computer idols 🙏
+
+These kind of tools (or *standards* in this case) help us rethink design, and overall information production, distribution and consumption. Using markdown is an alternative to design and coding style waves. It provides a bridge between *power users* that rely on command line interfaces and *users* bathed in a bootstrap vectorial consumerist world. ✊
+        </pre>
+    </article>
+
+    <article id="etherpad">
+        <h2>12. <a href="https://archlinux.org/" target="_blank">Etherpad</a></h2>
+        <pre>
+
+Did u know Etherpad was acquired by google in 2008 ? 🤔
+There is a quirky tale about free software an open source licensing from these days... 📜 Etherpad, which was spelled EtherPad at the time, was using the 'jsmin-php' library (a port of Douglas Crawford JSmin) in order to minify and unminify javascript code. But the library was published under an alternative MIT license, which icluded the following →
+☯️ "The software shall be used for good, not evil" 👼👿
+
+The library was promptly removed from G\*ogle Code (which only hosted truly "free" software), and google asked EtherPad dev to find an alternative library in order to publish the source code under the Apache License in 2009. The main argument is that enforcing "no to do evil" isn't considerer free software pratice: it limits arbitrarily the reach of the final user ! What's ur opinion about that ? ☝️
+
+Today we take collaborative editing of a document for granted, but as so many features of our modern internet, there is an history behind it. Editing a online file with multiple cursors seems pretty common nowadays. But *pads* had to be i n v e n t e d 💡
+
+Etherpad's principle are quite simple. Each "pad" has a unique URL, a lifetime, access management, a version history and an integrated chat. It has classic formating options and can be edited simultaneously via various users.
+
+There are also pugins available, like a video call one, illustrated with a fake call between the 🎺 whistleblower Edward Snowden and the free software prodigy Linus Torvalds 🐧
+
+With the rise of web 2.0 and plateform econony, we tend to associate a software with a company. But as an open source software, Etherpad is installed in so many places, by various people for different purpose. Here is a small list of websites where you can host your own pads ↓
+* https://pads.erg.be/
+* https://framapad.org
+* https://etherpad.wikimedia.org/
+* https://pad.riseup.net/
+* https://pad.piratensommer.de/
+* https://pad.education/
+*(you can find a more comprehensive list via the link in bio)
+
+I know, the website is still messy, but i'm working on it! If u have any suggestion design or content wise, just hit me up !
+        </pre>
+    </article>
+
+    <article id="aurora">
+        <h2>13. <a href="https://archlinux.org/" target="_blank">Aurora</a></h2>
+        <pre>
+
+🌃 Aurora is an alternative to the G\*ogle Play store, but you can find all of your favorites apps on it (unlike F-droid which we discussed last week).
+
+Why would anyone care ? 🧐
+
+Google is the main adverstising provider of the world 🌐, when TikTok, Apple or whatever want to advertise you something, they ask Google. The very act of downloading an app gives Google a clue of what ad is the best for you... so if you download TikTok (or any app for that matter) on the Aurora Store, Google wouldn't know you had it.
+Hence, as I scroll Instagram or am forced to watch an ad to remove a watermark from a fremium app 🤑, I often get TikTok advertising. As I already use that service, the advertising has a minimal effect on me 🤷
+
+Aurora aims to reduce the scope of information Google has on you.
+It also gives information about potential trackers found on the app code, a blacklist to *hide* apps from your phone, and a device spoofing option (simulate like you own another device so you can dowload restricted content). The dev team behind Aurora also built an F-droid client, with a smoother interface, but I don't understand the point though 😶‍🌫️ You can also find open source software (mainly F-droid repository) on the Aurora Store !
+
+We can read on their website "Unlike Google's Play Store, Aurora Store doesn't track your downloads or the apps you use. We respect your privacy. Aurora Store is also unaffected by Google marking your device as uncertified or lacking of necessary Google apps. Play Protect is not present, as this is a Play Store only feature." 🛡️
+
+IMO the best option to install it is by using F-Droid, information about this *app* is avalaible is a previous post (+via the link in bio ofc 🔗)
+
+Not much more to say about this software.
+Reclaim your tools, you bought your phone, you're supposed to OWN IT ✊! Install wathever u want, break it, unistall what you don't need and configure it to your pleasing 💅 I don't want to live in a homogeneous hell where even computers are being IKEAZED 🪑 💙
+
+My dream computer world holds plethora of "app stores", lists containing quirky and freaky software, big and small, productive and unproductive 🌻
+
+        </pre>
+    </article>
+
+    <article id="duck-duck-go">
+        <h2>14. <a href="https://archlinux.org/" target="_blank">Duck Duck Go</a></h2>
+        <pre>
+
+😵‍💫 for all the software of this advent calendar, Duck Duck Go has to be the one with the shittier name: it will be abreviated DDG in this document. It was created in 2008 by Gabriel Weinberg, a web entrepreneur 🤓
+
+🦆 DDG is an *hybrid* search engine, as it relies on various vendors API (Bing, primarly) But it doesn't store anything on you, doesn't monitor you: it is what a search engine should be (a search engine). It provides unfiltered results, and promises to get you out of your filter bubble 🧋
+
+For the majority of your searches David, it turns out, is just as good as Goliath, but what I like about DDG is that a lot of other websites are on the tip of my finger 🤌 Nowadays, internet is quite well indexed 📇 and many of our online searches are quite simply answered: being a restaurant, the wikipedia page of some obscure person or the notice for a random gadget.
+
+Event though I advocate for a shift in computer usage and understanding, I'm quite used to google products 🤦
+Every single time I'm looking for something online this go as follows:
+* i switch to firefox 🦊
+* i open a new tab (ctrl+t)
+* i type "my question"
+* → followed by a duck duck go MODIFIER
+* !g is for google
+* !gi is for google images
+* !gm for google maps
+* !gn for google news (never understood that one)
+* !f for .. flickr ! lol
+* !w is for wikipedia
+* !wfr is for the french version
+* !rapgenius is for .. well of course
+* !ig for instagram (what can u even search on there ?)
+* !a for amazon
+* !afr for amazon france
+* and so on...
+* (there are more than 13,000 !)
+
+So one might argue that I'm not reaaallly using the 🦆 duck duck go search engine: and I'm not (for my defense it is almost as shitty as their name 🙅)
+
+I strongly recommend your start applying these good pratices on a daily basis. It is quite simple to start. Just select DDG as your default search engine on your web browser (we'll talk about Firefox soonish). Forget you've changed from google and start getting unusual results... then remember what I told you:
+
+while using duckduckgo, the "!g" modifier you shall add to every request !
+
+It is also recommended to browse the web with their ➕ addon btw.
+
+http://ddg.gg ^^
+        </pre>
+    </article>
+
+    <article id="goodtime">
+        <h2>10. <a href="https://github.com/adrcotfas/Goodtime" target="_blank">Goodtime</a></h2>
+        <pre>
+
+Good Time is a simple pomodoro timer 🍅
+I guess that you might be familiar with this technique, as you might be a cogwheel of this big capitalist machine that taunts us constantly to increase our so called "productivity" 🤸 (if ur not, it justs consists in setting timers in order to focus on a specific task, then take a small break, re-focus on the task, repeating that until you take a longer break 😤 With an usual ratio of 25mn of work and 5mn of *break* ☕)
+
+## What IS productivity anyway ? 🤔
+"Productivity is a crucial factor in the production performance of firms and nations." states my favorite website... Imo it's kind of a way to quantify how much you produce, how much you work 💪
+So, can I use productivity techniques for something else than icreasing my country GDP ? Is it like posting anticapitalist content while using a product of said capitalism (say an iPhone), trying to destroy the master's house with its own tools 🏚️ Or posting about free software on proprietary and data captive social networks... 🤐
+
+In a way, focus is a great defense against attention capitalism 👀 On a daily basis, I use signal discord whatsapp sms matrix messenger twitter instagram email github 🌬️ many reasons to be notified out of a worksession 🙄. But after timing my *work*, I started timing other activities such as reading,leisure, gaming, or even alcool consumption and meeting people, "déformation professionelle" I suppose 🤷
+
+🔍 If your into data visualisation, and self quantization, know that you can export all your timed data in a `.csv` table. You can also set up different time ratio ⌛
+
+You can ⬇️ <a href="https://f-droid.org/en/packages/com.apps.adrcotfas.goodtime/" target="_blank">download Goodtime on F-droid</a> (and on G\*ogle Pl\*y St\*re). Give it a try !
+
+
+⚠️ ⚠️ ⚠️
+(on the topic of time mangement, i'll be dropping soonish an very special handwritten ASCII thermal printed calendar for 2022 if u need one 📆)
+
+
+    </pre>
+    </article>
+
+  
+    <!--
+              <article>
+            <h2>XX. <a href="XXX" target="_blank">XXXX</a></h2>
+            <pre id="XXX">
+            </pre>
+        </article>
+        -->
+</div>
+
+<div id="clippit">
+    <pre>
+      𝘥𝘰 𝘸𝘦 𝘶𝘴𝘦 𝘵𝘰𝘰𝘭𝘴,
+    𝘰𝘳 𝘢𝘳𝘦 𝘵𝘩𝘦𝘺 𝘶𝘴𝘪𝘯𝘨 𝘶𝘴 ?
+    </pre>															
+    <img src="clip.webp" alt="clippit, the microsoft assistant">
+    <pre id="me">
+
+a simple gift by <a href="https://twitter.com/MartinCopyright">martin.copyright</a>
+→ find images <a href="https://www.instagram.com/detertiarisation/">here</a>
+    </pre>
+</div>
+
+❄ ❅ ❆
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                    for(i=0; i<100; i++){
+                                var line = "\n";
+                                var content = $("pre#flakes").html();
+                                setTimeout(
+                                            function() 
+                                            {
+                                                        $("pre#flakes").html(" "+line+content);
+                                                    }, 500);
+
+                            }
+                    /*$("#snow").append("<pre class=\"flake\">❄</pre>");*/
+                    });
+    </script>
+</body>
